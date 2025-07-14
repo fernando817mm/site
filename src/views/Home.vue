@@ -20,8 +20,7 @@
   
   <style scoped>
   .home {
-    min-height: 100vh;
-    min-width: 100vw;
-    background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+    /* min-height: 100vh;
+    min-width: 100vw; */
   }
   </style>

@@ -52,21 +52,27 @@
   }
   
   .profile-info {
-    max-width: 600px;
+    /* max-width: 80%; */
   }
   
   .title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #1a202c;
+    font-size: 7rem;
+    color: #D4AF37;
     margin-bottom: 0.5rem;
   }
   
   .subtitle {
-    font-size: 1.25rem;
+    font-size: 1.6rem;
     font-weight: 400;
-    color: #4a5568;
+    /* color: #4a5568; */
     margin-bottom: 0;
+  }
+
+  .title, .subtitle {
+    font-family: "Manufacturing Consent", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    /* color: white; */
   }
   
   @media (max-width: 768px) {
@@ -76,11 +82,11 @@
     }
     
     .title {
-      font-size: 2rem;
+      font-size: 1.75rem;
     }
     
     .subtitle {
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
   }
   </style>

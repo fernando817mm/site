@@ -24,9 +24,11 @@
   }
   
   const jumpButtons = ref<JumpButton[]>([
+    { label: '2025', year: '2025' },
     { label: '2024', year: '2024' },
-    { label: '2023', year: '2023' },
-    { label: '2022', year: '2022' }
+    { label: '2021', year: '2021' },
+    { label: '2020', year: '2020' },
+    { label: '2019', year: '2019' }
   ])
   
   const activeSection = ref(0)
@@ -60,18 +62,18 @@
     })
   }
   
-  onMounted(() => {
-    window.addEventListener('scroll', handleScroll)
-  })
+  // onMounted(() => {
+  //   window.addEventListener('scroll', handleScroll)
+  // })
   
-  onUnmounted(() => {
-    window.removeEventListener('scroll', handleScroll)
-  })
+  // onUnmounted(() => {
+  //   window.removeEventListener('scroll', handleScroll)
+  // })
   </script>
   
   <style scoped>
   .timeline-jump-buttons {
-    position: sticky;
+    /* position: sticky; */
     top: 80px;
     background: #ffffff;
     border: 1px solid #e2e8f0;
