@@ -59,7 +59,12 @@ const timelineItems = ref<TimelineItem[]>([
         class="timeline-item"
         :class="{ 'timeline-item-right': index % 2 === 1 }"
       >
-        <GlassPanel :width="400">
+        <GlassPanel
+          :width="400" 
+          :height="200"
+          :transmission="0.9"
+          :roughness="0.1"
+          :ior="1.5">
           <div>
             <div class="timeline-date">{{ item.date }}</div>
             <h3 class="timeline-title-item">{{ item.title }}</h3>
